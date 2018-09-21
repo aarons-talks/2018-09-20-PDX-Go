@@ -94,7 +94,7 @@ Next, let's point Go modules to use Athens to fetch code from:
 export GOPROXY=https://microsoftgoproxy.azurewebsites.net
 ```
 
-_This is an experimental Athens server and could change or disappear any time! It's easy to run your own, though - see [this documentation](https://docs.gomods.io/install/shared-team-instance/) for how to do it._
+_NOTE: This is an experimental Athens server and could change or disappear any time! It's easy to run your own, though - see [this documentation](https://docs.gomods.io/install/shared-team-instance/) for how to do it._
 
 >This `GOPROXY` environment variable is telling Go modules to download all our code from Athens, and _not_ GitHub!
 
