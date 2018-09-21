@@ -10,7 +10,7 @@ and that you're running on a Bash shell. You definitely need Go 1.11, but
 you can choose to run on other shells (Zsh, Powershell, etc...) - just
 make sure to adapt the commands in here to your shell of choice.*
 
-# The Demo
+# About The Demo
 
 There's a lot going on in the background to make this demo simple as pie :pie:!
 
@@ -25,7 +25,7 @@ It's what's going on under the covers that's really, really cool :)
 
 So, let's get started!
 
-# The App
+# About The App
 
 The application code is in this repository, in [main.go](./main.go).
 If you look closely enough, you'll notice that I copy-pasted it right from the 
@@ -64,7 +64,9 @@ Let's use the power of [Go Modules](https://cda.ms/FN) and
 1. Other dependency management tools
 2. A `vendor/` directory
 
-It's simple! So let's get to it.
+It's simple! So let's get to the demo!
+
+## Get the Code, With a Twist :wink:
 
 First, let's get the code. Clone this repository to somewhere on your computer,
 OUTSIDE your `GOPATH`:
@@ -76,6 +78,8 @@ cd 2018-09-20-PDX-Go
 ```
 
 >That's right - we're going to build this app outside the GOPATH. We can do that now!
+
+## Set up Your Environment
 
 Next, let's set up our environment to turn on the Go Modules flag. In Go
 1.11, the older GOPATH behavior is turned on by default. Let's turn on Go
@@ -98,6 +102,8 @@ _NOTE: This is an experimental Athens server and could change or disappear any t
 
 >This `GOPROXY` environment variable is telling Go modules to download all our code from Athens, and _not_ GitHub!
 
+## Clear Your Caches :boom:
+
 Almost done - let's make sure that our local Go modules cache is empty. This
 cache is located in your `GOPATH` under `${GOPATH}/pkg/mod` and is used
 for all Go module based builds on our machine.
@@ -109,6 +115,8 @@ Let's delete the cache, _and_ since we know we're going to be fetching the
 rm -r ${GOPATH}/pkg/mod # you might need to 'sudo' this!
 rm -r ${GOPATH}/src/github.com/labstack/echo
 ```
+
+## Build The App!
 
 And finally, let's go do our build (this one might take a little while while 
 `go` downloads code from Athens):
