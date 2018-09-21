@@ -69,7 +69,7 @@ It's simple! So let's get to the demo!
 ## Get the Code, With a Twist :wink:
 
 First, let's get the code. Clone this repository to somewhere on your computer,
-OUTSIDE your `GOPATH`:
+but make sure it's outside your `GOPATH`:
 
 ```console
 cd my/dir
@@ -77,7 +77,12 @@ git clone https://github.com/aarons-demo-code/2018-09-20-PDX-Go.git
 cd 2018-09-20-PDX-Go
 ```
 
->That's right - we're going to build this app outside the GOPATH. We can do that now!
+### I Got A Fever...
+
+And the only cure is _no `GOPATH`_! 
+
+Ok that one was pretty lame, but we can build our apps outside of the 
+`GOPATH` now. We're gonna show that in action right now :tada:!
 
 ## Set up Your Environment
 
