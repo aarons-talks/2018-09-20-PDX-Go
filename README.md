@@ -1,4 +1,4 @@
-# Welcome, Athenians! :yellow_heart: :heart: :blue_heart: :purple_heart:
+# Welcome, Athenians! :smiley:
 
 I'm so glad you're here. Let's talk about [Project Athens](https://github.com/gomods/athens) today!
 
