@@ -99,14 +99,14 @@ _NOTE: This is an experimental Athens server and could change or disappear any t
 >This `GOPROXY` environment variable is telling Go modules to download all our code from Athens, and _not_ GitHub!
 
 Almost done - let's make sure that our local Go modules cache is empty. This
-cache is located in your `GOPATH` under `${GOPATH}/src/mod` and is used
+cache is located in your `GOPATH` under `${GOPATH}/pkg/mod` and is used
 for all Go module based builds on our machine.
 
 Let's delete the cache, _and_ since we know we're going to be fetching the
 `github.com/labstack/echo` package, let's delete that from our `GOPATH` too:
 
 ```console
-rm -r ${GOPATH}/src/mod
+rm -r ${GOPATH}/pkg/mod # you might need to 'sudo' this!
 rm -r ${GOPATH}/src/github.com/labstack/echo
 ```
 
