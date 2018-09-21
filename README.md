@@ -80,6 +80,9 @@ Modules by setting an environment variable:
 export GO111MODULE=on
 ```
 
+(by the way, this environment variable allows us to run everything outside 
+of the `GOPATH`)
+
 Next, let's point Go modules to use Athens to fetch code from:
 
 ```console
