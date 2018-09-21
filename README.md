@@ -115,8 +115,6 @@ And finally, let's go do our build (this one might take a little while while
 go build
 ```
 
->After you do your build, check out `${GOPATH}/src/github.com/labstack/echo`! Did you find anything there?
-
 # What Happened?
 
 Do you notice some lines of output that look like this?
