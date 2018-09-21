@@ -141,7 +141,17 @@ go: finding github.com/valyala/fasttemplate latest
 ...
 ```
 
-That's Go modules downloading code from Athens :smile:
+That's Go modules downloading code from Athens :smile:. For each dependency, Go
+modules asks the Athens server:
+
+- What's the latest version?
+- Does it have a `go.mod` file (i.e. is it a Go module too?)
+- Give me some other metadata about it (i.e. `created_date`)
+- Give me a _zip file_ with the source code of the module
+
+>That last part is important! We're not downloading entire Git trees here - just the source code at a particular version. Hooray!!
+
+## There's a New `go.sum` File?
 
 After your build is done, you'll see a new `go.sum` file that looks
 kinda like this:
@@ -170,6 +180,8 @@ app needs. Even the dependencies of the dependencies (and dependencies of depend
 
 Commonly, you should check in this `go.sum` file, but we're not going
 to check it in here so that the demo looks good :wink:.
+
+## Oh! The `go.mod` Got Updated!
 
 Also notice that there are some more lines in the `go.mod` file now!
 
