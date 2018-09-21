@@ -5,6 +5,11 @@ I'm so glad you're here. Let's talk about [Project Athens](https://github.com/go
 This repository has demos and code that I used in a talk about Athens at
 the September 20, 2018 PDX Go meetup.
 
+*These instructions assume that you have a Go 1.11 toolchain installed
+and that you're running on a Bash shell. You definitely need Go 1.11, but
+you can choose to run on other shells (Zsh, Powershell, etc...) - just
+make sure to adapt the commands in here to your shell of choice.*
+
 # The Demo
 
 There's a lot going on in the background to make this demo simple as pie :pie:!
