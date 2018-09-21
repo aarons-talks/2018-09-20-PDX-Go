@@ -12,7 +12,8 @@ make sure to adapt the commands in here to your shell of choice.*
 
 # About The Demo
 
-There's a lot going on in the background to make this demo simple as pie :pie:!
+There's a lot going on in the background to make this demo simple as pie
+:sunglasses:!
 
 We're going to build a web application in here, but the actual web app
 isn't the exciting part here -- it'll be super simple, actually.
@@ -121,7 +122,7 @@ rm -r ${GOPATH}/pkg/mod # you might need to 'sudo' this!
 rm -r ${GOPATH}/src/github.com/labstack/echo
 ```
 
-## Build The App!
+## Build The App! :shipit:
 
 And finally, let's go do our build (this one might take a little while while 
 `go` downloads code from Athens):
@@ -130,7 +131,7 @@ And finally, let's go do our build (this one might take a little while while
 go build
 ```
 
-# What Happened?
+# What Happened? :scream:
 
 Do you notice some lines of output that look like this?
 
@@ -195,7 +196,7 @@ At this point, our app is built and ready to run
 But it's also ready to check into GitHub, so that the rest of our team, our CI,
 etc... can build and run it.
 
-# But Shouldn't We Check In `vendor`?
+# But Shouldn't We Check In `vendor`? :worried:
 
 We still can, but let's not!
 
