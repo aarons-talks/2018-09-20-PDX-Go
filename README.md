@@ -3,7 +3,7 @@
 I'm so glad you're here. Let's talk about [Project Athens](https://github.com/gomods/athens) today!
 
 This repository has demos and code that I used in a talk about Athens at
-the September 20, 2018 PDX Go meetup.
+[the September 20, 2018 PDX Go meetup](https://www.meetup.com/PDX-Go/events/251030520/).
 
 *These instructions assume that you have a Go 1.11 toolchain installed
 and that you're running on a Bash shell. You definitely need Go 1.11, but
