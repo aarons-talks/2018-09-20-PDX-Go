@@ -100,17 +100,22 @@ Almost done - let's make sure that our local Go modules cache is empty. This
 cache is located in your `GOPATH` under `${GOPATH}/src/mod` and is used
 for all Go module based builds on our machine.
 
-Let's delete it to be sure that all our code is coming from Athens:
+Let's delete the cache, _and_ since we know we're going to be fetching the
+`github.com/labstack/echo` package, let's delete that from our `GOPATH` too:
 
 ```console
-rm -rf ${GOPATH}/src/mod
+rm -r ${GOPATH}/src/mod
+rm -r ${GOPATH}/src/github.com/labstack/echo
 ```
 
-And finally, let's go do our build:
+And finally, let's go do our build (this one might take a little while while 
+`go` downloads code from Athens):
 
 ```
 go build
 ```
+
+>After you do your build, check out `${GOPATH}/src/github.com/labstack/echo`! Did you find anything there?
 
 # What Happened?
 
