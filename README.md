@@ -29,7 +29,7 @@ So, let's get started!
 
 The application code is in this repository, in [main.go](./main.go).
 If you look closely enough, you'll notice that I copy-pasted it right from the 
-[Echo README](https://github.com/labstack/echo/tree/a2d4cb9c7a629e2ee21861501690741d2374de10#example).
+[Echo README](https://github.com/labstack/echo/tree/a2d4cb9c7a629e2ee21861501690741d2374de10#example) (I made a tiny little change though, just for you #PDXGophers!).
 
 Like I said, nothing remarkable, right?
 
